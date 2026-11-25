@@ -1,0 +1,63 @@
+body {
+  background-color: #3d3d3d;        /* dark charcoal page background */
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  display: flex;                    /* center the poster on the page */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.poster {
+  background-color: #565656;        /* lighter gray rounded frame */
+  border-radius: 15px;
+  padding: 50px 40px;
+  width: 480px;
+  text-align: center;
+}
+
+/* READ LAST — smallest, dimmest text, placed at the very top */
+.last {
+  color: #9a9a9a;                   /* low contrast: barely noticed */
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+/* READ FIRST — the focal point: huge, bold, high-contrast, boxed in yellow */
+.first {
+  background-color: #333333;        /* dark panel */
+  border: 6px solid #ffd700;        /* thick yellow border = strongest emphasis */
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 52px;                  /* largest text on the page */
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.first .accent { color: #ffd700; }  /* yellow words pop inside white text */
+
+/* READ SECOND — medium size, bold, on a bright white bar */
+.second {
+  background-color: #ffffff;
+  color: #3d3d3d;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 22px;
+  font-weight: bold;
+  display: inline-block;            /* shrink-wrap the bar around the text */
+  margin-bottom: 15px;
+}
+
+/* READ THIRD — smaller, italic, right-aligned below the white bar */
+.third {
+  color: #ffffff;
+  font-size: 15px;
+  font-style: italic;
+  text-align: right;
+  margin: 0;
+}
